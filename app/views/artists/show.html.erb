@@ -1,0 +1,6 @@
+<p>My artist name</p>
+<h1><%= @artist.name %></h1>
+<p>My artist bio</p>
+<textarea name="bio" id="artist-bio" cols="30" rows="10"><%= @artist.bio %></textarea>
+<%= link_to  "My edit", edit_artist_path(@artist) %>
+<h1>link_to  "My genre", genre_path(@artist.genre)</h1>
