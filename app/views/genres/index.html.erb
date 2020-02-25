@@ -1,0 +1,7 @@
+<h1>Genres</h1>
+
+<% @genres.each {|g|%>
+
+<h2><%= g.name %></h2>
+<%= link_to g.name, artist_path(g) %>
+<% } %>
